@@ -1,0 +1,14 @@
+export CB_HOSTNAME=localhost
+export CB_FTSHOSTNAME=localhost
+export CB_USERNAME=Administrator
+export CB_PASSWORD=password
+
+export CB_BUCKET=travel-sample
+export CB_SCOPE=semantic
+export CB_COLLECTION=pdf
+
+export CB_SEARCHINDEX=idx_pdf
+
+export OPENAI_API_KEY=
+
+export WEB_LOGIN_PASSWORD=password

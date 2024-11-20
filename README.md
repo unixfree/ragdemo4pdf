@@ -1,3 +1,5 @@
+이 소스는 https://github.com/jon-strabala/easy-webrag-langchain-demo 에서 가져와서 수정한 것입니다.
+
 ## RAG Demo using Couchbase, Streamlit, Langchain, and OpenAI
 
 This is a demo app built to chat with your custom PDFs using the vector search capabilities of Couchbase to augment the OpenAI results in a Retrieval-Augmented-Generation (RAG) model.

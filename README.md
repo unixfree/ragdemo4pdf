@@ -6,8 +6,6 @@ This is a demo app built to chat with your custom PDFs using the vector search c
 
 The demo will run for both self-managed OnPrem 7.6+ Couchbase deployments and also clould based 7.6+ Capella deployments
 
-If you don't have the time to run the demo you can just download and watch the 7 minute video: [easy-webrag-langchain-demo_1920x1080.mp4](https://github.com/jon-strabala/easy-webrag-langchain-demo/blob/main/easy-webrag-langchain-demo_1920x1080.mp4) 
-
 ### Prerequisites 
 
 You will need a database user with login credentials to your Couchbase cluster and an OpenAI API bearer key for this Linux demo
@@ -35,8 +33,8 @@ Quick tips on Python virtual environments (please folow this unless you are an e
 - The above works for *bash* or *zsh*, however you would use `. .venv/bin/activate` if you are using *sh*
 
 - Now download this git repo and cd into it.<br><br>
-`git clone https://github.com/jon-strabala/easy-webrag-langchain-demo.git`<br>
-`cd easy-webrag-langchain-demo`
+`git clone https://github.com/unixfree/ragdemo4pdf.git`<br>
+`cd ragdemo4pdf`
 
 ### How does this demo work?
 
@@ -57,9 +55,9 @@ For RAG, we are using LangChain, Couchbase Vector Search & OpenAI. We fetch part
 
 - Copy the template environment template
 
-  `cp _setup.tmpl _setup`
+  `vi env_setup`
 
-- Required environment variables that you must configure in _setup
+- Required environment variables that you must configure in env_setup
   ```
   export CB_HOSTNAME="<the hostname or IP address of your Couchbase server>"
   export CB_FTSHOSTNAME="<the hostname or IP address of a node running Search in your Couchbase cluster>"
@@ -85,7 +83,7 @@ For RAG, we are using LangChain, Couchbase Vector Search & OpenAI. We fetch part
 
 - Source the _setup file (we assume a bash shell)
 
-  `source _setup`
+  `source env_setup`
 
 - The above works for *bash* or *zsh*, however you would use `. _setup` if you are using *sh*
 
